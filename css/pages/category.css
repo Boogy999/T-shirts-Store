@@ -1,0 +1,66 @@
+/* Category Pages Specific Styles */
+/* Common styles for all category pages (men, women, boys, girls) */
+
+.category-banner {
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.category-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.category-banner p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Specific category banner backgrounds */
+.men-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/men-banner.jpg');
+}
+
+.women-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/women-banner.jpg');
+}
+
+.boys-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/boys-banner.jpg');
+}
+
+.girls-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/girls-banner.jpg');
+}
+
+.products-section {
+    padding: 60px 0;
+}
+
+/* Empty state when no products match filters */
+.no-products {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.no-products i {
+    font-size: 3rem;
+    color: var(--gray-color);
+    margin-bottom: 20px;
+}
+
+.no-products h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.no-products p {
+    color: var(--gray-color);
+    max-width: 500px;
+    margin: 0 auto;
+}

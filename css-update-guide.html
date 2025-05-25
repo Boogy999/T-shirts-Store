@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Update Guide | TrendyTees</title>
+    <!-- Use the new main.css file instead of styles.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .guide-section {
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .code-block {
+            background-color: #f5f7fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        
+        .file-structure {
+            background-color: #f5f7fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: monospace;
+        }
+        
+        .file-structure ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        .file-structure li {
+            margin-bottom: 5px;
+        }
+        
+        .file-structure .folder:before {
+            content: "📁 ";
+        }
+        
+        .file-structure .file:before {
+            content: "📄 ";
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TrendyTees</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/men.html">Men</a></li>
+                    <li><a href="pages/women.html">Women</a></li>
+                    <li><a href="pages/boys.html">Boys</a></li>
+                    <li><a href="pages/girls.html">Girls</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="pages/cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Guide Content -->
+    <section class="guide-section">
+        <div class="container">
+            <h2 class="section-title">CSS Structure Update Guide</h2>
+            <p>This guide explains the new CSS structure for the TrendyTees website. The CSS has been organized into a modular structure for better maintainability and organization.</p>
+            
+            <h3>New CSS File Structure</h3>
+            <div class="file-structure">
+                <ul>
+                    <li class="folder">css/
+                        <ul>
+                            <li class="file">main.css (imports all other CSS files)</li>
+                            <li class="folder">base/
+                                <ul>
+                                    <li class="file">variables.css (color variables, spacing, etc.)</li>
+                                    <li class="file">reset.css (CSS reset and base styles)</li>
+                                    <li class="file">typography.css (text styles, headings)</li>
+                                    <li class="file">utilities.css (utility classes)</li>
+                                </ul>
+                            </li>
+                            <li class="folder">layout/
+                                <ul>
+                                    <li class="file">header.css (header styles)</li>
+                                    <li class="file">footer.css (footer styles)</li>
+                                </ul>
+                            </li>
+                            <li class="folder">components/
+                                <ul>
+                                    <li class="file">hero.css (hero section)</li>
+                                    <li class="file">categories.css (category cards)</li>
+                                    <li class="file">products.css (product cards)</li>
+                                    <li class="file">colors.css (color dot styles)</li>
+                                    <li class="file">offers.css (special offers section)</li>
+                                    <li class="file">newsletter.css (newsletter section)</li>
+                                    <li class="file">filters.css (category page filters)</li>
+                                </ul>
+                            </li>
+                            <li class="folder">pages/
+                                <ul>
+                                    <li class="file">home.css (home page specific styles)</li>
+                                    <li class="file">category.css (category pages styles)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <h3>How to Update Your HTML Files</h3>
+            <p>To use the new CSS structure, update the link tag in your HTML files from:</p>
+            <div class="code-block">&lt;link rel="stylesheet" href="css/styles.css"&gt;</div>
+            
+            <p>To:</p>
+            <div class="code-block">&lt;link rel="stylesheet" href="css/main.css"&gt;</div>
+            
+            <p>For pages in the "pages" directory, update from:</p>
+            <div class="code-block">&lt;link rel="stylesheet" href="../css/styles.css"&gt;</div>
+            
+            <p>To:</p>
+            <div class="code-block">&lt;link rel="stylesheet" href="../css/main.css"&gt;</div>
+            
+            <h3>Benefits of the New Structure</h3>
+            <ul>
+                <li>Better organization of styles by purpose</li>
+                <li>Easier to find and update specific components</li>
+                <li>Reduced CSS conflicts</li>
+                <li>More maintainable codebase</li>
+                <li>Faster development for new features</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>TrendyTees</h4>
+                    <p>Your one-stop shop for premium quality t-shirts for the whole family.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="pages/men.html">Men</a></li>
+                        <li><a href="pages/women.html">Women</a></li>
+                        <li><a href="pages/boys.html">Boys</a></li>
+                        <li><a href="pages/girls.html">Girls</a></li>
+                        <li><a href="pages/sale.html">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="pages/faq.html">FAQ</a></li>
+                        <li><a href="pages/shipping.html">Shipping</a></li>
+                        <li><a href="pages/returns.html">Returns</a></li>
+                        <li><a href="pages/size-guide.html">Size Guide</a></li>
+                        <li><a href="pages/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="pages/terms.html">Terms & Conditions</a></li>
+                        <li><a href="pages/careers.html">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TrendyTees. All Rights Reserved.</p>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

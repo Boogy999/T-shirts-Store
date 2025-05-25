@@ -1,0 +1,93 @@
+/* Categories Section Styles */
+.categories {
+    padding: 80px 0;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.category-card {
+    height: 300px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.category-card.men {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/men-category.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.category-card.women {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/women-category.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.category-card.boys {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/boys-category.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.category-card.girls {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/girls-category.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.category-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.category-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.category-content .btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--dark-color);
+}
+
+.category-content .btn:hover {
+    background-color: white;
+}
+
+/* Responsive Categories */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-card {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+}

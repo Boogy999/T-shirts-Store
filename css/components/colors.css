@@ -1,0 +1,15 @@
+/* Color Dots Styles */
+.color-dot.black { background-color: #000; }
+.color-dot.white { background-color: #fff; border: 1px solid #ddd; }
+.color-dot.red { background-color: #e74c3c; }
+.color-dot.blue { background-color: #3498db; }
+.color-dot.green { background-color: #2ecc71; }
+.color-dot.yellow { background-color: #f1c40f; }
+.color-dot.purple { background-color: #9b59b6; }
+.color-dot.pink { background-color: #ff80ab; }
+.color-dot.gray { background-color: #95a5a6; }
+.color-dot.navy { background-color: #34495e; }
+.color-dot.teal { background-color: #1abc9c; }
+.color-dot.mint { background-color: #00b894; }
+.color-dot.burgundy { background-color: #a93226; }
+.color-dot.orange { background-color: #e67e22; }
